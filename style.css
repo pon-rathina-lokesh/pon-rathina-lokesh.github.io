@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #F6C500;
+    --text-color: #222;
+    --background-color: #fff;
+    --accent-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+nav {
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a.hireme-btn {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.hireme-btn:hover {
+    color: #fff;
+    background: var(--accent-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 4rem 1rem 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+header .hireme-btn.main {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+header .hireme-btn.main:hover {
+    background: #333;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+}
+
+.skills-list, .bookshelf-list, .contact-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li, .bookshelf-list li, .contact-links li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 260px;
+    min-height: 140px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.project-card a {
+    margin-top: auto;
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.resume-link {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-links a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.contact-links a:hover {
+    color: var(--primary-color);
+}
+
+.hireme-section {
+    background: #fff9e1;
+    border-left: 4px solid var(--primary-color);
+    padding: 1.2rem 1rem;
+    border-radius: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    color: #888;
+    background: #f9f9f9;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 100%;
+    }
+    header {
+        padding: 3rem 0.5rem 1.2rem 0.5rem;
+    }
+}
