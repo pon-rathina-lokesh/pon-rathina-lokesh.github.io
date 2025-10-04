@@ -1,197 +1,196 @@
-:root {
-    --primary-color: #F6C500;
-    --text-color: #222;
-    --background-color: #fff;
-    --accent-color: #222;
-}
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.7;
+    background-color: #111;
 }
 
-nav {
-    background: var(--primary-color);
-    padding: 1rem 2rem;
+li {
+    display: inline;
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    color: #f6c500;
+    background-color: #111;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent-color);
-}
-
-nav ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    gap: 1.5rem;
+    column-gap: 20px;
 }
 
-nav ul li a {
+.nav-links a {
     text-decoration: none;
-    color: var(--accent-color);
-    font-weight: 500;
-    transition: color 0.2s;
+    color: #f6c500;
+    transition: 1s ease;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 3px solid #f6c500;
+    display: inline-block;
+    line-height: 1.2;
+    min-width: 130px;
+    text-align: center;
+    padding: 10px 25px;
+    vertical-align: middle;
 }
 
-nav ul li a.hireme-btn {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: bold;
+.nav-links a:hover {
+    scale: 1.1;
+    background-color: #f6c500;
+    color: black;
+    box-shadow: #222 3px 4px 6px 0px inset;
 }
 
-nav ul li a:hover, nav ul li a.hireme-btn:hover {
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle {
+    color: #f6c500;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Side Navbar */
+.side-navbar {
+    background-color: #222;
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    text-align: right;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.close-btn {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #f6c500;
+    cursor: pointer;
+
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.side-nav-links a {
+    display: block;
+    text-decoration: none;
+    color: #f6c500;
+    font-weight: 600;
+    padding: 15px 15px;
+}
+
+.side-nav-links a:hover {
+    background-color: #f6c500;
+    color: black;
+    transition: 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
     color: #fff;
-    background: var(--accent-color);
+    display: block;
+    position: relative;
+    margin-left: 100px;
+    gap: 50px;
+    margin-top: 120px;
+    z-index: 1;
 }
 
-header {
-    background: var(--primary-color);
-    color: var(--accent-color);
-    text-align: center;
-    padding: 4rem 1rem 2rem 1rem;
+.cta-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f6c500;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: larger;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.cta-button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s ease;
 }
 
-header .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+.hero h1 {
+    font-size: 50px;
 }
 
-header .hireme-btn.main {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    font-size: 1.1rem;
-    background: var(--accent-color);
-    color: var(--primary-color);
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.2s;
+.hero .asp{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-header .hireme-btn.main:hover {
-    background: #333;
+.che {
+    font-size: 20px;
+    font-style: italic ;
 }
 
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.asp{
+    font-size: medium;
+}
+.eng {
+    color: #f6c500;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-main section {
-    margin-bottom: 2rem;
+.an {
+    color: #f6c500;
 }
 
-h2 {
-    color: var(--primary-color);
-    margin-bottom: 0.7rem;
-    font-size: 2rem;
+.loc {
+    margin-top: 10px;
 }
 
-.skills-list, .bookshelf-list, .contact-links {
-    list-style: none;
-    padding-left: 0;
-}
+/* About Section */
 
-.skills-list li, .bookshelf-list li, .contact-links li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
 
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.project-card {
-    background: #fafafa;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 260px;
-    min-height: 140px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.project-card h3 {
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
-}
-
-.project-card a {
-    margin-top: auto;
-    color: var(--primary-color);
-    text-decoration: underline;
-    font-size: 0.95rem;
-}
-
-.resume-link {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-.contact-links a {
-    color: var(--accent-color);
-    text-decoration: underline;
-    transition: color 0.2s;
-}
-
-.contact-links a:hover {
-    color: var(--primary-color);
-}
-
-.hireme-section {
-    background: #fff9e1;
-    border-left: 4px solid var(--primary-color);
-    padding: 1.2rem 1rem;
-    border-radius: 7px;
-}
-
-footer {
-    text-align: center;
-    padding: 1.5rem 0 1rem 0;
-    color: #888;
-    background: #f9f9f9;
-    margin-top: 3rem;
-    font-size: 1rem;
-}
-
-@media (max-width: 650px) {
-    nav ul {
-        flex-direction: column;
-        gap: 0.7rem;
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
     }
-    .projects-container {
-        flex-direction: column;
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero {
+        margin-top: 120px;
+        margin-left: 10px;
+        justify-content: center;
         align-items: center;
     }
-    .project-card {
-        width: 100%;
+
+    .hero h1 {
+        font-size: 35px;
     }
-    header {
-        padding: 3rem 0.5rem 1.2rem 0.5rem;
+
+    .hero div {
+        text-align: center;
     }
+
 }

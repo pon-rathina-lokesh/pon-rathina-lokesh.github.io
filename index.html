@@ -1,85 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pon Rathina Lokesh | Portfolio </title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">Pon Rathina Lokesh</div>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#bookshelf">Book Shelf</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#hireme" class="hireme-btn">Hire Me</a></li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h3>Portfolio</h3>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="navbar-toggle" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
-    <header>
-        <h1>Hi, I'm Pon Rathina Lokesh</h1>
-        <p class="subtitle">[Your short bio will go here]</p>
-        <a href="#hireme" class="hireme-btn main">Hire Me</a>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>[Placeholder for your introduction]</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>ReactJS</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Credit Card Fraud Detection</h3>
-                    <p>Short project description.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <p><a href="#" class="resume-link">Download Resume (PDF)</a></p>
-        </section>
-        <section id="bookshelf">
-            <h2>Book Shelf</h2>
-            <ul class="bookshelf-list">
-                <li>Atomic Habits</li>
-                <li>Psychology of Money</li>
-                <li>Rich Dad Poor Dad</li>
-                
-                <!-- Add more books as needed -->
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out via any platform below:</p>
-            <ul class="contact-links">
-                <li><a href="mailto:ponrathinalokesh@gmail.com" target="_blank">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/pon-rathina-lokesh" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/Pon-Rathina-Lokesh" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-        <section id="hireme" class="hireme-section">
-            <h2>Hire Me</h2>
-            <p>[You can add a contact form or instructions here]</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Pon Rathina Lokesh. All rights reserved.</p>
-    </footer>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <div class="close-btn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="side-nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h3 class="eng">Hi, I am</h3>
+            <h1>Pon Rathina Lokesh</h1>
+            <p class="asp"><span class="an">an</span> aspiring software <span class="eng">ENGINEER</span></p>
+            <p class="loc">based in <span class="che"> Chennai, India.</span></p>
+            <button class="cta-button">Contact Me  <i class="fa-solid fa-envelope"></i></button>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+
 </body>
+
 </html>
